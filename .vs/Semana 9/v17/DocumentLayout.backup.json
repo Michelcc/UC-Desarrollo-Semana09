@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|c:\\users\\michel\\documents\\juegos unity\\semana 9\\assets\\script\\core\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\core\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|c:\\users\\michel\\documents\\juegos unity\\semana 9\\assets\\script\\scriptsui\\optionsstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptsui\\optionsstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|c:\\users\\michel\\documents\\juegos unity\\semana 9\\assets\\script\\player\\playerinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\player\\playerinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\assets\\script\\scriptsui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptsui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\assets\\script\\player\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\player\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\assets\\script\\scriptsui\\uistate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptsui\\uistate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\assets\\script\\core\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\core\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\assets\\script\\scriptsui\\mainmenustate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptsui\\mainmenustate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\assets\\script\\scriptsui\\ingamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptsui\\ingamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\assets\\script\\scriptsui\\pausemenustate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{453294D6-F604-5095-0D0C-5F1093312F63}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptsui\\pausemenustate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,52 +39,75 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DoorController.cs",
-              "DocumentMoniker": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\Core\\DoorController.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Core\\DoorController.cs",
-              "ToolTip": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\Core\\DoorController.cs",
-              "RelativeToolTip": "Assets\\Script\\Core\\DoorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Title": "OptionsState.cs",
+              "DocumentMoniker": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\ScriptsUI\\OptionsState.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ScriptsUI\\OptionsState.cs",
+              "ToolTip": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\ScriptsUI\\OptionsState.cs",
+              "RelativeToolTip": "Assets\\Script\\ScriptsUI\\OptionsState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T13:39:50.4Z",
+              "WhenOpened": "2025-10-24T23:22:35.789Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PlayerInteractor.cs",
-              "DocumentMoniker": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\player\\PlayerInteractor.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\player\\PlayerInteractor.cs",
-              "ToolTip": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\player\\PlayerInteractor.cs",
-              "RelativeToolTip": "Assets\\Script\\player\\PlayerInteractor.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAIwDwAAAABAAAAAAAAAA==",
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\ScriptsUI\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ScriptsUI\\UIManager.cs",
+              "ToolTip": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\ScriptsUI\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Script\\ScriptsUI\\UIManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T13:31:46.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T13:23:50.726Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FirstPersonController.cs",
-              "DocumentMoniker": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\player\\FirstPersonController.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\player\\FirstPersonController.cs",
-              "ToolTip": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\player\\FirstPersonController.cs",
-              "RelativeToolTip": "Assets\\Script\\player\\FirstPersonController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBIAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "PauseMenuState.cs",
+              "DocumentMoniker": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\ScriptsUI\\PauseMenuState.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ScriptsUI\\PauseMenuState.cs",
+              "ToolTip": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\ScriptsUI\\PauseMenuState.cs",
+              "RelativeToolTip": "Assets\\Script\\ScriptsUI\\PauseMenuState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T12:46:48.558Z"
+              "WhenOpened": "2025-10-23T13:23:08.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InGameState.cs",
+              "DocumentMoniker": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\ScriptsUI\\InGameState.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ScriptsUI\\InGameState.cs",
+              "ToolTip": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\ScriptsUI\\InGameState.cs",
+              "RelativeToolTip": "Assets\\Script\\ScriptsUI\\InGameState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T13:22:44.878Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IInteractable.cs",
-              "DocumentMoniker": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\Core\\IInteractable.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Core\\IInteractable.cs",
-              "ToolTip": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\Core\\IInteractable.cs",
-              "RelativeToolTip": "Assets\\Script\\Core\\IInteractable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAA+wAIAAAAUAAAAAAAAAA==",
+              "Title": "MainMenuState.cs",
+              "DocumentMoniker": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\ScriptsUI\\MainMenuState.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ScriptsUI\\MainMenuState.cs",
+              "ToolTip": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\ScriptsUI\\MainMenuState.cs",
+              "RelativeToolTip": "Assets\\Script\\ScriptsUI\\MainMenuState.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAA2wBUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T12:32:34.424Z"
+              "WhenOpened": "2025-10-23T13:19:25.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UIState.cs",
+              "DocumentMoniker": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\ScriptsUI\\UIState.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ScriptsUI\\UIState.cs",
+              "ToolTip": "C:\\Users\\Michel\\Documents\\Juegos Unity\\Semana 9\\Assets\\Script\\ScriptsUI\\UIState.cs",
+              "RelativeToolTip": "Assets\\Script\\ScriptsUI\\UIState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T13:06:42.107Z"
             }
           ]
         }
