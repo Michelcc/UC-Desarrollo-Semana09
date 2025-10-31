@@ -1,8 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-
-[RequireComponent(typeof(CharacterController))]
 public class FirstPersonController : MonoBehaviour
 {
     [Header("Movement Settings")]
@@ -10,7 +8,7 @@ public class FirstPersonController : MonoBehaviour
 
     [Header("Look Settings")]
     [SerializeField] private float _mouseSensitivity = 2.0f;
-    [SerializeField] private float _verticalLookLimit = 80.0f;
+    [SerializeField] private float _verticalLookLimit = 80f;
 
     [Header("Component References")]
     [SerializeField] private Transform _cameraTransform;
@@ -22,73 +20,98 @@ public class FirstPersonController : MonoBehaviour
     private Vector2 _lookInput;
     private float _xRotation = 0f;
 
-    private void Awake()
+    private float _verticalVelocity = 0f;
+    private float _gravity = -9.81f;
+
+
+    void Awake()
     {
         _characterController = GetComponent<CharacterController>();
-        if (_cameraTransform == null)
+
+        if (!_cameraTransform)
         {
-            Debug.LogError("Error: La referencia a la Transform de la cámara no está asignada en el FirstPersonController.", this);
+            Debug.Log("Error, camara no asignada");
             this.enabled = false;
             return;
         }
+
         _inputActions = new PlayerInputActions();
     }
 
-    private void OnEnable()
+    void Start()
     {
-        _inputActions.Player.Enable();
+        // Esto ya no es necesario, lo maneja UIManager
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+    }
 
-        _inputActions.Player.Move.performed += OnMoveInput;
-        _inputActions.Player.Move.canceled += OnMoveInput;
+    void OnEnable()
+    {
+        _inputActions.Enable();
+
+        _inputActions.Player.Move.performed += OnMouseInput;
+        _inputActions.Player.Move.canceled += OnMouseInput;
         _inputActions.Player.Look.performed += OnLookInput;
         _inputActions.Player.Look.canceled += OnLookInput;
     }
-    private void OnDisable()
+
+    void OnDisable()
     {
-        _inputActions.Player.Move.performed -= OnMoveInput;
-        _inputActions.Player.Move.canceled -= OnMoveInput;
+        if (_inputActions == null) return;
+        _inputActions.Player.Move.performed -= OnMouseInput;
+        _inputActions.Player.Move.canceled -= OnMouseInput;
         _inputActions.Player.Look.performed -= OnLookInput;
         _inputActions.Player.Look.canceled -= OnLookInput;
 
-        _inputActions.Player.Disable();
+        _inputActions.Disable();
     }
 
-    private void Update()
+    void Update()
     {
         HandleMovement();
         HandleLook();
     }
-    private void OnMoveInput(InputAction.CallbackContext context)
+
+    private void OnMouseInput(InputAction.CallbackContext ctx)
     {
-        _moveInput = context.ReadValue<Vector2>();
+        _moveInput = ctx.ReadValue<Vector2>();
     }
-    private void OnLookInput(InputAction.CallbackContext context)
+
+    private void OnLookInput(InputAction.CallbackContext ctx)
     {
-        _lookInput = context.ReadValue<Vector2>();
+        _lookInput = ctx.ReadValue<Vector2>();
     }
 
     private void HandleMovement()
     {
         Vector3 moveDirection = transform.forward * _moveInput.y + transform.right * _moveInput.x;
+
+        if (_characterController.isGrounded)
+        {
+            _verticalVelocity = -1f; // Pequeño valor para mantenerlo pegado al suelo
+        }
+        else
+        {
+            _verticalVelocity += _gravity * Time.deltaTime;
+        }
+
+        // Combinar movimiento horizontal y vertical
+        moveDirection.y = _verticalVelocity;
+
         _characterController.Move(moveDirection * _movementSpeed * Time.deltaTime);
     }
 
     private void HandleLook()
     {
-
-        // Rotación horizontal (eje Y)
         float mouseX = _lookInput.x * _mouseSensitivity * Time.deltaTime;
         transform.Rotate(Vector3.up * mouseX);
 
-        // Rotación vertical (eje X)
         float mouseY = _lookInput.y * _mouseSensitivity * Time.deltaTime;
 
         _xRotation -= mouseY;
 
-        // Limitamos (clamp) la rotación vertical para evitar giros completos.
-        _xRotation = Mathf.Clamp(_xRotation, _verticalLookLimit, _verticalLookLimit);
-        _cameraTransform.localRotation = Quaternion.Euler(_xRotation, 0f, 0f);
+        _xRotation = Mathf.Clamp(_xRotation, -_verticalLookLimit, +_verticalLookLimit);
 
+        _cameraTransform.localRotation = Quaternion.Euler(_xRotation, 0, 0);
     }
-
 }

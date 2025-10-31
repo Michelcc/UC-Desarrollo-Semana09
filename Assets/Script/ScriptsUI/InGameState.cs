@@ -7,7 +7,13 @@ public class InGameState : UIState
     public override void Enter()
     {
         Debug.Log("Entrando al estado de En Juego");
-        m_uiManager.inGameHudPanel.SetActive(true);
+
+        if (m_uiManager.inGameHudPanel != null)
+            m_uiManager.inGameHudPanel.SetActive(true);
+
+        if (m_uiManager.mainMenuPanel != null)
+            m_uiManager.mainMenuPanel.SetActive(false);
+
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -15,7 +21,9 @@ public class InGameState : UIState
 
     public override void Exit()
     {
-        Debug.Log("Saliendo del estado de Menú Principal");
-        m_uiManager.inGameHudPanel.SetActive(false);
+        Debug.Log("Saliendo del estado de En Juego");
+
+        if (m_uiManager.inGameHudPanel != null)
+            m_uiManager.inGameHudPanel.SetActive(false);
     }
 }
