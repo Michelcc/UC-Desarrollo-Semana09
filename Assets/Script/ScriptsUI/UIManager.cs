@@ -163,39 +163,4 @@ public class UIManager : MonoBehaviour
         inGameHudPanel.SetActive(false);
         victoryPanel.SetActive(true);
     }
-
-    /// <summary>
-    /// Actualiza el texto del temporizador en pantalla.
-    /// Se llama desde el GameManager cada segundo.
-    /// </summary>
-    public void UpdateTimer(float timeInSeconds)
-    {
-        if (infoText == null) return;
-
-        int minutes = Mathf.FloorToInt(timeInSeconds / 60);
-        int seconds = Mathf.FloorToInt(timeInSeconds % 60);
-        infoText.text = $"Tiempo: {minutes:00}:{seconds:00}";
-    }
-
-    /// <summary>
-    /// Muestra el panel de derrota (cuando se acaba el tiempo o se pierde el juego).
-    /// </summary>
-    public void ShowLossPanel()
-    {
-        inGameHudPanel.SetActive(false);
-
-        // Puedes crear un nuevo panel en el Canvas y asignarlo aquí.
-        // Si aún no tienes uno, simplemente crea un panel vacío y llámalo "lossPanel".
-        GameObject lossPanel = GameObject.Find("LossPanel");
-        if (lossPanel != null)
-        {
-            lossPanel.SetActive(true);
-        }
-        else
-        {
-            Debug.LogWarning("No se encontró 'LossPanel' en la escena. Crea uno y asígnalo.");
-        }
-    }
-
-
 }

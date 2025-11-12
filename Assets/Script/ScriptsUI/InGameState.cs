@@ -8,12 +8,9 @@ public class InGameState : UIState
     {
         Debug.Log("Entrando al estado de En Juego");
 
-        if (m_uiManager.inGameHudPanel != null)
-            m_uiManager.inGameHudPanel.SetActive(true);
+        Object.FindFirstObjectByType<FirstPersonController>().enabled = true;
 
-        if (m_uiManager.mainMenuPanel != null)
-            m_uiManager.mainMenuPanel.SetActive(false);
-
+        m_uiManager.inGameHudPanel.SetActive(true);
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -21,9 +18,7 @@ public class InGameState : UIState
 
     public override void Exit()
     {
-        Debug.Log("Saliendo del estado de En Juego");
-
-        if (m_uiManager.inGameHudPanel != null)
-            m_uiManager.inGameHudPanel.SetActive(false);
+        Debug.Log("Saliendo del estado de Menú Principal");
+        m_uiManager.inGameHudPanel.SetActive(false);
     }
 }
